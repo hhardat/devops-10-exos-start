@@ -23,7 +23,6 @@ describe("app tests suites - isAdmin", () => {
     });
 });
 
-
 describe("remove X names from all names test suite", () => {
     test("should not remove anyone from names ", () => {
         const names = ["John", "Peter", "Sara"];
@@ -34,12 +33,12 @@ describe("remove X names from all names test suite", () => {
     test("should remove DMX from names ", () => {
         const names = ["DMX", "Peter", "Sara"];
         const result = removeXNames(names, "X");
-        expect(result).toEqual([ "Peter", "Sara"]);
+        expect(result).toEqual(["Peter", "Sara"]);
     });
 
     test("should remove xeo and Xzibit from names ", () => {
         const names = ["xeo", "Xzibit", "Sara"];
         const result = removeXNames(names, "X");
-        expect(result).toEqual([ "Sara"]);
+        expect(result).toEqual(["Sara"]);
     });
 });

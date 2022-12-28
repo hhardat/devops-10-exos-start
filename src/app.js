@@ -28,8 +28,10 @@ try {
 }
 
 const removeXNames = (names, nameToRemove) => {
-    return names.filter((name) => !name.toLowerCase().includes(nameToRemove.toLowerCase()));
-}
+    return names.filter(
+        (name) => !name.toLowerCase().includes(nameToRemove.toLowerCase())
+    );
+};
 
 exports.getCurrentMonth = getCurrentMonth;
 exports.isAdmin = isAdmin;
