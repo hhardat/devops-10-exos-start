@@ -27,5 +27,10 @@ try {
     console.error(JSON.stringify(err));
 }
 
+const removeXNames = (names, nameToRemove) => {
+    return names.filter((name) => !name.toLowerCase().includes(nameToRemove.toLowerCase()));
+}
+
 exports.getCurrentMonth = getCurrentMonth;
 exports.isAdmin = isAdmin;
+exports.removeXNames = removeXNames;
