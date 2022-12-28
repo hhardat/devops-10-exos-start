@@ -59,5 +59,8 @@
         "statements": 80
       }
     }
+  },
+  "dependencies": {
+    "firebase": "^9.15.0"
   }
 }
